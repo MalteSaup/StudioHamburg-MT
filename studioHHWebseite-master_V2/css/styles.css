@@ -1,0 +1,132 @@
+body {
+    position: relative;
+    background: #000;
+    color: #fff;
+}
+
+section {
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Yrsa', serif;
+    font-size: 40px;
+    color: #e0c646;
+}
+
+h3 {
+    font-family: 'Yrsa', serif;
+    font-size: 21px;
+    color: #e0c646;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    transition: background 1s;
+    padding: 20px;
+    z-index: 100;
+}
+
+.nav {
+    margin: 0 auto;
+}
+
+#navbar.scrolled-nav {
+    background: #000000d9;
+}
+
+#sectionLiveStream {
+    background-image: url(../imgs/BG-Livestream.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html body .nav-item a.nav-link {
+    border-radius: 0;
+    color: #fff;
+    border: 1px solid;
+    margin: 5px 13px;
+    min-width: 180px;
+    text-align: center;
+}
+
+html body .nav-item a.nav-link.active {
+    color: #fff;
+    background-color: #e0c646;
+    border-color: #e0c646;
+}
+
+.content {
+    padding: 20px;
+}
+
+header.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+header .col {
+    padding: 0;
+}
+
+header h3 {
+    margin-left: 38px;
+    margin-top: -20px;
+}
+
+.iframeWrapper {
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.sectionWrapper {
+    padding: 40px 140px 140px 140px;
+}
+
+#sectionSponsoren {
+    background-image: url(../imgs/BG-Version1.jpg);
+}
+
+.sectionFlex {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sectionMitwirkende {
+    background-image: url(../imgs/BG-Version2.jpg);
+    background-attachment: fixed;
+}
+
+.subheadline {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: -120px;
+    margin-bottom: 20px;
+}
+
+.subheadline img {
+    height: 110px;
+    margin-right: 5px;
+    margin-top: -12px;
+}
