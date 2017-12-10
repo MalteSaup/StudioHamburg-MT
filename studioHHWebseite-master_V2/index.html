@@ -20,7 +20,7 @@
             <li class="nav-item"> <a class="nav-link" href="#sectionSponsoren">Sponsoren</a> </li>
             <li class="nav-item"> <a class="nav-link" href="#sectionMitwirkende">Mitwirkende</a> </li>
         </ul>
-    </nav>
+    </nav><!---->
     <div>
         <section id="sectionLiveStream">
             <div class="content">
@@ -108,10 +108,83 @@
         
         </section>
     </div>
+    
+    
+    
+    <!--  -------------------- JAVASCRIPT SECTION -----------------------------     -->
+    
+    
+    
+    
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <!--<script src="js/scripts.js"></script>
+    -->
+    <!--
+
+        Ich hab hier das Javascript Script in die HTML verschoben zur einfacheren bearbeitung. Kann sonst nachher wieder ausgelagert werden.
+
+    -->
+    
+    
+    <script> 
+	$(document).ready(function () {
+        setSize();
+        $('body').scrollspy({
+            target: ".navbar"
+            , offset: 50
+        });
+
+        $("#navbar a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+        $(window).scroll(function () {
+            scrollTop = $(window).scrollTop();
+            $('.counter').html(scrollTop);
+            if (scrollTop >= 100) {
+                $('#navbar').addClass('scrolled-nav');
+            }
+            else if (scrollTop < 100) {
+                $('#navbar').removeClass('scrolled-nav');
+            }
+        });
+    });
+
+    $( window ).resize(function() {
+        setSize();
+    });
+
+    function setSize() {
+        var scrollTop = 0;
+        var header = $("header").outerHeight();
+        var nav = $("nav").outerHeight();
+        var windowHeight = $( window ).height();
+        var iframeHeight = windowHeight - header - nav - 40;
+        var iframeWidth = $( window ).width() * 0.9;
+        
+        if((iframeHeight * 16 / 9) > iframeWidth){
+
+            iframeHeight = iframeWidth * 9 / 16;
+        }
+        else{
+            iframeWidth = iframeHeight * 16 / 9;
+            }
+
+        $(".iframeWrapper").css("height", iframeHeight);
+        $(".iframeWrapper").css("width", iframeWidth);
+    }    
+    </script>
+
 </body>
 
 </html>
