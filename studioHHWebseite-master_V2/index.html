@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Studio Hamburg</title>
+    <title>The Musgrave Recipe</title>
     <meta name="description" content="Studio Hamburg">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
     <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -17,105 +19,84 @@
     <nav id="navbar" class="navbar">
         <ul class="nav nav-pills">
             <li class="nav-item"> <a class="nav-link active" href="#sectionLiveStream">Live Stream</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#sectionSponsoren">Sponsoren</a> </li>
+            <li class="nav-item"> <a class="nav-link nav-link-border" href="#sectionSponsoren">Sponsoren</a> </li>
             <li class="nav-item"> <a class="nav-link" href="#sectionMitwirkende">Mitwirkende</a> </li>
         </ul>
-    </nav><!---->
-    <div>
-        <section id="sectionLiveStream">
-            <div class="content">
-                <header class="container">
-                    <div class="row">
-                        <div class="col col-3"><img src="imgs/LogoOhneHintergrund.png"></div>
-                        <div class="col col-9"><img src="imgs/TitelMetallSchatten.png">
-                            <h3>In Zusammenarbeit mit der Studio Hamburg GmbH zeigt die Hochschule für angewadte Wissenschaften Hamburg ein Live-Hörspiel basierent auf Sir Arthur Conan Doyle's SHERLOCK HOLMES in der Neu-Interpretation:</h3>
-                        </div>
-                    </div>
-                </header>
-                <div class="iframeWrapper">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/live_stream?channel=UCQcMtUG-cfRAX8P2uXXptsQ&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </nav>
+    <!---->
+    <section id="sectionLiveStream">
+        <div class="content">
+            <header class="container">
+                <div class="row row-center">
+                    <div class="logoHeader"><img id="logo" src="imgs/LogoOhneHintergrund.png"></div>
+                    <div class="col"><img id="headerImg" src="imgs/TitelMetallSchatten.png">
+                        <h4>In Zusammenarbeit mit der Studio Hamburg GmbH zeigt die Hochschule für angewadte Wissenschaften Hamburg ein Live-Hörspiel basierent auf Sir Arthur Conan Doyle's SHERLOCK HOLMES in der Neu-Interpretation:</h4> </div>
                 </div>
-
+            </header>
+            <div class="iframeWrapper">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/live_stream?channel=UCQcMtUG-cfRAX8P2uXXptsQ&autoplay=1" frameborder="0" allowfullscreen></iframe>
             </div>
-        </section>
-        <section id="sectionSponsoren" class="sectionFlex">
-            
-            <div class="sectionWrapper">
-                <div class="subheadline">
-                        <img src="imgs/LogoOhneHintergrund.png">
-                        <h1>Sponsoren</h1>
-                    </div>
-                <div class="row">
-                    
-                    <div class="col col-4">
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                    </div>
-                    <div class="col col-4">
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                    </div>
-                    <div class="col col-4">
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                    </div>
-                </div>
-
-            </div>
-                
-        </section>
-        <section id="sectionMitwirkende" class="sectionFlex">
+        </div>
+    </section>
+    <section id="sectionSponsoren" class="sectionFlex">
         <div class="sectionWrapper">
-                <div class="subheadline">
-                        <img src="imgs/LogoOhneHintergrund.png">
-                        <h1>Mitwirkende</h1>
-                    </div>
-                <div class="row">
-                    
-                    <div class="col col-4">
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                    </div>
-                    <div class="col col-4">
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                    </div>
-                    <div class="col col-4">
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                        <p>Vorname Nachname</p>
-                    </div>
+            <div class="subheadline"> <img class="logo logoSubheadline" src="imgs/LogoOhneHintergrund.png">
+                <h1>Sponsoren</h1> </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
                 </div>
-
+                <div class="col-md-4 col-sm-12">
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                </div>
             </div>
-        
-        </section>
-    </div>
-    
-    
-    
+        </div>
+    </section>
+    <section id="sectionMitwirkende" class="sectionFlex">
+        <div class="sectionWrapper">
+            <div class="subheadline"> <img class="logo logoSubheadline" src="imgs/LogoOhneHintergrund.png">
+                <h1>Mitwirkende</h1> </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                    <p>Vorname Nachname</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--  -------------------- JAVASCRIPT SECTION -----------------------------     -->
-    
-    
-    
-    
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
@@ -126,65 +107,56 @@
         Ich hab hier das Javascript Script in die HTML verschoben zur einfacheren bearbeitung. Kann sonst nachher wieder ausgelagert werden.
 
     -->
-    
-    
-    <script> 
-	$(document).ready(function () {
-        setSize();
-        $('body').scrollspy({
-            target: ".navbar"
-            , offset: 50
+    <script>
+        $(document).ready(function () {
+            setSize();
+            $('body').scrollspy({
+                target: ".navbar"
+                , offset: 50
+            });
+            $("#navbar a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+            $(window).scroll(function () {
+                scrollTop = $(window).scrollTop();
+                $('.counter').html(scrollTop);
+                if (scrollTop >= 100) {
+                    $('#navbar').addClass('scrolled-nav');
+                }
+                else if (scrollTop < 100) {
+                    $('#navbar').removeClass('scrolled-nav');
+                }
+            });
+        });
+        $(window).resize(function () {
+            setSize();
         });
 
-        $("#navbar a").on('click', function (event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-                    window.location.hash = hash;
-                });
+        function setSize() {
+            var scrollTop = 0;
+            var header = $("header").outerHeight();
+            var nav = $("nav").outerHeight();
+            var windowHeight = $(window).height();
+            var iframeHeight = windowHeight - header - nav - 40;
+            var iframeWidth = $(window).width() * 0.9;
+            if ((iframeHeight * 16 / 9) > iframeWidth) {
+                iframeHeight = iframeWidth * 9 / 16;
             }
-        });
-
-        $(window).scroll(function () {
-            scrollTop = $(window).scrollTop();
-            $('.counter').html(scrollTop);
-            if (scrollTop >= 100) {
-                $('#navbar').addClass('scrolled-nav');
+            else {
+                iframeWidth = iframeHeight * 16 / 9;
             }
-            else if (scrollTop < 100) {
-                $('#navbar').removeClass('scrolled-nav');
-            }
-        });
-    });
-
-    $( window ).resize(function() {
-        setSize();
-    });
-
-    function setSize() {
-        var scrollTop = 0;
-        var header = $("header").outerHeight();
-        var nav = $("nav").outerHeight();
-        var windowHeight = $( window ).height();
-        var iframeHeight = windowHeight - header - nav - 40;
-        var iframeWidth = $( window ).width() * 0.9;
-        
-        if((iframeHeight * 16 / 9) > iframeWidth){
-
-            iframeHeight = iframeWidth * 9 / 16;
+            $(".iframeWrapper").css("height", iframeHeight);
+            $(".iframeWrapper").css("width", iframeWidth);
         }
-        else{
-            iframeWidth = iframeHeight * 16 / 9;
-            }
-
-        $(".iframeWrapper").css("height", iframeHeight);
-        $(".iframeWrapper").css("width", iframeWidth);
-    }    
     </script>
-
 </body>
 
 </html>
