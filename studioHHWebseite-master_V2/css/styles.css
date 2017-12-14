@@ -191,3 +191,24 @@ iframe {
         text-align: center;
     }
 }
+
+table{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    
+    line-height: 1.5;
+    
+    
+}
+table .spacebetween{
+    
+    width: 10%;
+    
+}
+
+table .credits{
+    
+    font-weight: 400;
+    width: 35%;
+    
+}
