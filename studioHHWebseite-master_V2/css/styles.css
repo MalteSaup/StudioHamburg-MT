@@ -11,7 +11,7 @@ section {
 
 h1 {
     font-family: 'Yrsa', serif;
-    font-size: 40px;
+    font-size: 3.5rem;
     color: #e0c646;
 }
 
@@ -27,7 +27,7 @@ h4 {
 }
 
 .container img#logo {
-       width: 230px;
+    width: 230px;
     height: auto;
 }
 
@@ -51,7 +51,7 @@ h4 {
 }
 
 #navbar.scrolled-nav {
-    background: #00000059;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 #sectionLiveStream {
@@ -109,11 +109,17 @@ iframe {
 }
 
 .sectionWrapper {
-    padding: 40px 140px 140px 140px;
+    padding: 80px 140px 140px 140px;
 }
 
 #sectionSponsoren {
     background-image: url(../imgs/BG-Version1.jpg);
+}
+
+#sponsorenWrapper img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .sectionFlex {
@@ -131,10 +137,7 @@ iframe {
 
 .subheadline {
     position: relative;
-    display: flex;
-    align-items: center;
-    margin-left: -120px;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
 .subheadline img {
@@ -150,7 +153,7 @@ iframe {
     html body .nav-item a.nav-link {
         min-width: auto;
         margin: 0;
-        background: #000000bf;
+        background: rgba(0, 0, 0, 0.7);
         border: 0;
     }
     .logoSubheadline {
@@ -183,7 +186,7 @@ iframe {
         padding-bottom: 50px;
     }
     .container img#logo {
-    width: 150px;
+        width: 150px;
     }
     .row-center {
         display: block;
@@ -193,14 +196,29 @@ iframe {
     }
 }
 
-table{
- 
+table {
     max-width: 880px;
-    
 }
 
-table .credits{
-    
-    width: 35%;
-    
+table .credits {
+    width: 50%;
+    color: #e2d9ab;
+    font-style: italic;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+.credits:first-child {
+    text-align: right;
+    padding-right: 10px;
+    color: #fff;
+    font-style: normal;
+}
+
+.credits.tdCenter {
+    text-align: center;
+}
+
+.tdHead {
+    padding-top: 40px;
 }
