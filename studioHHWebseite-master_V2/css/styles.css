@@ -256,3 +256,12 @@ table .credits {
     line-height: 1.5;
     
 }
+
+#copyright{
+    
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+   
+}
