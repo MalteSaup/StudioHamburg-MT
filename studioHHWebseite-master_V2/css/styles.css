@@ -238,7 +238,7 @@ table .credits {
     
 }
 
-#beschreibungsWrapper span{
+#beschreibungsWrapper p{
     
     display: inline-block;
     text-align: center;
