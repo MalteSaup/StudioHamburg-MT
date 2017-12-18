@@ -158,6 +158,9 @@ iframe {
         padding: 10px 2px;
         font-size: 0.8rem;
     }
+    header .col {
+        text-align: center
+    }
     #sectionLiveStream, #sectionMitwirkende {
         background-attachment: inherit;
     }
@@ -234,9 +237,7 @@ table .credits {
 #sectionBeschreibung{
     background: #032312;
     background: -webkit-linear-gradient(to left, #032312, #003319, #032312);
-    background: linear-gradient(to left, #032312, #003319, #032312);
-    min-height: inherit;
-    
+    background: linear-gradient(to left, #032312, #003319, #032312);    
 }
 #beschreibungsWrapper{
     
