@@ -1,0 +1,267 @@
+body {
+    position: relative;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Yrsa', serif;
+    font-size: 3.5rem;
+    color: #e0c646;
+}
+
+h4 {
+    font-family: 'Yrsa', serif;
+    /*font-size: 2.25vh;*/
+    color: #e0c646;
+}
+
+.row-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.container img#logo {
+    width: 230px;
+    height: auto;
+}
+
+#headerImg {
+    max-height: 10vh;
+    max-width: 100%;
+    min-height: 90px;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    transition: background 1s;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.nav {
+    margin: 0 auto;
+}
+
+#navbar.scrolled-nav {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#sectionLiveStream {
+    background-image: url(../imgs/BG-Livestream.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html body .nav-item a.nav-link {
+    border-radius: 0;
+    color: #fff;
+    border: 1px solid;
+    margin: 5px 13px;
+    min-width: 180px;
+    height: auto;
+    text-align: center;
+}
+
+html body .nav-item a.nav-link.active {
+    color: #fff;
+    background-color: #e0c646;
+    border-color: #e0c646;
+}
+
+.content {
+    padding: 20px;
+}
+
+header.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+header .col {
+    padding: 0;
+}
+
+header h4 {
+    margin-left: 3vh;
+}
+
+.iframeWrapper {
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.sectionWrapper {
+    padding: 80px 140px 140px 140px;
+}
+
+#sectionSponsoren {
+    background-image: url(../imgs/BG-Version1.jpg);
+}
+
+#sponsorenWrapper img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.sectionFlex {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sectionMitwirkende {
+    background-image: url(../imgs/BG-Version2.jpg);
+    background-attachment: fixed;
+}
+
+.subheadline {
+    position: relative;
+    text-align: center;
+}
+
+.subheadline img {
+    height: 110px;
+    margin-right: 5px;
+    margin-top: -12px;
+}
+
+@media (max-width:880px) {
+    h3 {
+        font-size: 1 rem;
+    }
+    html body .nav-item a.nav-link {
+        min-width: auto;
+        margin: 0;
+        background: rgba(0, 0, 0, 0.7);
+        border: 0;
+        padding: 10px 2px;
+        font-size: 0.8rem;
+    }
+    header .col {
+        text-align: center
+    }
+    #sectionLiveStream, #sectionMitwirkende {
+        background-attachment: inherit;
+    }
+    
+    #sectionMitwirkende {
+        background-size: auto;
+    }
+    .logoSubheadline {
+        display: none;
+    }
+    li.nav-item {
+        width: 25%;
+    }
+    .nav {
+        width: 100%;
+    }
+    #navbar {
+        padding: 0;
+    }
+    html body .nav-item a.nav-link.nav-link-border {
+        border-left: 1px solid #fff;
+    }
+    .sectionWrapper {
+        padding: 40px 20px;
+    }
+    .subheadline {
+        margin-left: 0;
+    }
+    .iframeWrapper {
+        width: 100% !important;
+        min-height: 300px !important;
+    }
+    .content {
+        padding-bottom: 50px;
+    }
+    .container img#logo {
+        width: 150px;
+    }
+    .row-center {
+        display: block;
+    }
+    .logoHeader {
+        text-align: center;
+    }
+}
+
+table {
+    max-width: 880px;
+}
+
+table .credits {
+    width: 50%;
+    color: #e2d9ab;
+    font-style: italic;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+.credits:first-child {
+    text-align: right;
+    padding-right: 10px;
+    color: #fff;
+    font-style: normal;
+}
+
+.credits.tdCenter {
+    text-align: center;
+}
+
+.tdHead {
+    padding-top: 40px;
+}
+
+#sectionBeschreibung{
+    background: #032312;
+    background: -webkit-linear-gradient(to left, #032312, #003319, #032312);
+    background: linear-gradient(to left, #032312, #003319, #032312);    
+}
+#beschreibungsWrapper{
+    
+    margin: 0 auto;
+    width: 80%;
+    max-width: 740px;
+    height: 100%;
+    
+    
+}
+
+#beschreibungsWrapper p{
+    
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    
+}
+
+#copyright{
+    
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+   
+}
